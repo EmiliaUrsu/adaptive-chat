@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0, maximum-scale=1, minimul-scale=1"
+     >
+    <title>Adaptive-Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!---<div class="phone">--> 
+    <section class="app">
+    <header></header>
+    <main>
+        <!--Am utilizat ul, intrucat grupam o colectie de contacte
+        ordinea carora in lista nu are sens sa fie numerotata.
+        Nu va arata vizual dragut.-->
+        <ul class="contacts">
+            <li class="contacts__profile status--on" id="l1">
+                <div class="scroll-up"><a href="#l12"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av3.png" alt="John Doe">
+                </div>
+                <div class="message__content">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>  
+                <span class="message__status"><span class="seen"><i class="fas fa-check-circle"></i></span><br> 09:30</span>
+               <div class="scroll-down"><a href="#l2"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--off" id="l2">
+                <div class="scroll-up"><a href="#l1"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av1.png" alt="Donald Trump">
+                </div>
+               <div class="message__content">
+                <h2>Donald Trump</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+               </div> 
+                <span class="message__status"><span class="arrived"><i class="fas fa-check"></i></span><br> 14:27</span>
+                <div class="scroll-down"><a href="#l3"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--recent-on" id="l3">
+                <div class="scroll-up"><a href="#l2"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av2.png" alt="Ann Scott">
+                </div>
+                <div class="message__content">
+                <h2>Ann Scott</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <span class="message__status"><span class="sent"><i class="far fa-check-circle"></i></span> <br>19:45</span>
+                <div class="scroll-down"><a href="#l4"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--on" id="l4">
+                <div class="scroll-up"><a href="#l3"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av3.png" alt="John Doe">
+                </div>
+                <div class="message__content">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>  
+                <span class="message__status"><span class="seen"><i class="fas fa-check-circle"></i></span><br> 09:30</span>
+                <div class="scroll-down"><a href="#l5"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--off" id="l5">
+                <div class="scroll-up"><a href="#4"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av1.png" alt="Donald Trump">
+                </div>
+               <div class="message__content">
+                <h2>Donald Trump</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+               </div> 
+                <span class="message__status"><span class="arrived"><i class="fas fa-check"></i></span><br> 14:27</span>
+                <div class="scroll-down"><a href="#l6"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--recent-on" id="l6">
+                <div class="scroll-up"><a href="#l5"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av2.png" alt="Ann Scott">
+                </div>
+                <div class="message__content">
+                <h2>Ann Scott</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <span class="message__status"><span class="sent"><i class="far fa-check-circle"></i></span> <br>19:45</span>
+                <div class="scroll-down"><a href="#l7"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--on" id="l7">
+                <div class="scroll-up"><a href="#l6"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av3.png" alt="John Doe">
+                </div>
+                <div class="message__content">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>  
+                <span class="message__status"><span class="seen"><i class="fas fa-check-circle"></i></span><br> 09:30</span>
+                <div class="scroll-down"><a href="#l8"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--off" id="l8">
+                <div class="scroll-up"><a href="#l7"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av1.png" alt="Donald Trump">
+                </div>
+               <div class="message__content">
+                <h2>Donald Trump</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+               </div> 
+                <span class="message__status"><span class="arrived"><i class="fas fa-check"></i></span><br> 14:27</span>
+                <div class="scroll-down"><a href="#l9"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--recent-on" id="l9">
+                <div class="scroll-up"><a href="#l8"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av2.png" alt="Ann Scott">
+                </div>
+                <div class="message__content">
+                <h2>Ann Scott</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <span class="message__status"><span class="sent"><i class="far fa-check-circle"></i></span> <br>19:45</span>
+                <div class="scroll-down"><a href="#l10"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--on" id="l10">
+                <div class="scroll-up"><a href="#l9"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av3.png" alt="John Doe">
+                </div>
+                <div class="message__content">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>  
+                <span class="message__status"><span class="seen"><i class="fas fa-check-circle"></i></span><br> 09:30</span>
+                <div class="scroll-down"><a href="#l11"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--off" id="l11">
+                <div class="scroll-up"><a href="#l10"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av1.png" alt="Donald Trump">
+                </div>
+               <div class="message__content">
+                <h2>Donald Trump</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+               </div> 
+                <span class="message__status"><span class="arrived"><i class="fas fa-check"></i></span><br> 14:27</span>
+                <div class="scroll-down"><a href="#l12"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png"></a></div>
+            </li>
+            <li class="contacts__profile status--recent-on" id="l12">
+                <div class="scroll-up"><a href="#l1"><img src="https://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Up-4-icon.png"></a></div>
+                <div class="profile__avatar"><img  src="av2.png" alt="Ann Scott">
+                </div>
+                <div class="message__content">
+                <h2>Ann Scott</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <span class="message__status"><span class="sent"><i class="far fa-check-circle"></i></span> <br>19:45</span>
+                
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+    </section>
+<!--</div>-->
+</body>
+</html>

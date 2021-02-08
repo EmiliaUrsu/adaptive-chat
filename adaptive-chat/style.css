@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background-color: #999;
+    font-family: sans-serif;
+}
+body{
+    --main-color:#ddd;
+    --mess-status:rgb(143, 34, 143);
+
+}
+.phone{
+    width: 80%;
+    height: 90%;
+    background-color: #999;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2,p{
+    margin: 0;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+.app header,
+.app footer{
+    
+    height: 9%;
+    background-color: rgb(240, 239, 239);
+}
+.app main{
+    background-color: var(--main-color);
+    height: 82%;
+    overflow-y: scroll;
+}
+.contacts{
+    background-color: var(--main-color);
+}
+.contacts__profile{
+    height: 10.4vh;
+    padding: .25em;
+    border-bottom: 1px solid rgb(240, 239, 239);
+}
+.profile__avatar{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    float: left;
+    background-color: rgb(240, 239, 239);
+    border-radius: 100%;
+    
+}
+.profile__avatar::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    
+    border-radius: 100%;
+    top: 0.5em;
+    border: 0.15em solid var(--main-color);
+    z-index: 1;
+
+}
+.status--on .profile__avatar::before{
+    background-color:  rgb(20, 168, 20);
+}
+.status--off .profile__avatar::before{
+    background-color: red;
+}
+.status--recent-on .profile__avatar::before{
+    
+    background-color: rgba(139, 202, 139, 0.829);
+}
+.profile__avatar img{
+    width: 100%;
+    position: absolute;
+}
+.message__content{
+float: left;
+}
+.message__status{
+    float: right;
+    color: #777;
+}
+.contacts .status--on .seen{
+    color: var(--mess-status)
+}
+
+.contacts .status--off .arrived{
+    color: var(--mess-status);
+}
+.contacts .status--recent-on .sent{
+    color: var(--mess-status);
+}
+.contacts .scroll-down{
+    top:88%;
+    left: 50%;
+    position: fixed;
+    
+}
+.contacts .scroll-up{
+    top:5%;
+    left: 50%;
+    position: fixed;
+    
+}
+@media(orientation:landscape){
+    .message__status{
+        margin-right: 1.5em;
+        
+    }
+    .profile__avatar{
+        margin-left: 1.5em;
+    }
+    .message__content{
+        margin-left: 1em;
+    }
+    .contacts__profile{
+        height: 27vh;
+    }
+}
+@media(orientation:landscape) and (min-width:1000px){
+    body{
+        font-size: 25px;
+    }
+}
+@media(orientation:portrait){
+    .contacts__profile{
+        height: 10.45vh;
+    }
+}
